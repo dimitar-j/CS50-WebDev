@@ -1,0 +1,28 @@
+.top-right {
+    position: absolute;
+    right: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+#search {
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+#container {
+    position: relative;
+    top: 200px;
+}
+
+h2 {
+    color:#d93025;
+}
+
+.adv-search{
+    position: absolute;
+    right: 0px;
+}

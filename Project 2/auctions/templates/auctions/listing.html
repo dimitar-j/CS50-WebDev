@@ -1,0 +1,92 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<div style="position: relative;"> 
+    <div>
+        {%if not listing.image %}
+            <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" width="400px" height="400px">
+        {%else%}
+            <img src={{listing.image}} width="400px" height="400px">
+        {%endif%}
+    </div>
+    <div style="position: absolute; top: 10px; right: 10px; text-align: right;">
+        {% if listing.active %}
+            <div>
+                This listing is <strong>active</strong>
+            </div>
+            {% if listing.user == user %}
+                <a href = "{% url 'closelisting' listing.id %}">Close listing</a>
+            {%endif%}
+        {% else %}
+            This listing is <b>closed</b>
+        {%endif%}
+
+    </div>
+    <div style="position: relative; left: 420px; width:70%;">
+        <h1>{{listing.title}}</h1>
+        <hr>
+        <div>
+            Posted by: <strong>{{listing.user}}</strong>
+        </div>
+        <br>
+        <div>
+            {{listing.description}}
+        </div>
+        <hr>
+        <h4>Current Price: ${{listing.current_price}}</h4>
+        <h6>Starting Price: ${{listing.start_price}}</h6>
+        {% if authenticated and listing.active %}
+            <form action = "{% url 'listing' listing.id %}" method = "POST" class = "form-inline">
+                {% csrf_token %}
+                <label for="bid_input">Make a Bid: </label>
+                <input type ="number" name = 'bid' class="form-control m-2" id = bid_input step = 0.01> 
+                <input type = "submit" name="action" class="btn btn-primary m-2" value = "Bid!"></button>        
+            <h5>or</h5>
+                {% if saved %}
+                    <input type="submit" name="action" value="Remove from Watchlist" class = "btn btn-danger m-2">
+                {% else %}
+                    <input type="submit" name="action" value="Add to Watchlist" class = "btn btn-success m-2">
+                {% endif %}
+            </form>
+            <div>
+                {{error}}
+            </div>
+        {% elif authenticated and user == highest_bidder %}
+            <h1 style="color: green;">You won this item!</h1>
+            <form action = "{% url 'listing' listing.id %}" method = "POST" class = "form-inline">
+                {% csrf_token %}      
+                {% if saved %}
+                    <input type="submit" name="action" value="Remove from Watchlist" class = "btn btn-danger m-2">
+                {% else %}
+                    <input type="submit" name="action" value="Add to Watchlist" class = "btn btn-success m-2">
+                {% endif %}
+            </form>    
+        {% endif %}
+    </div>
+    <div class="container" style="position: relative; top: 200px;">
+        <h2>
+            Comments
+        </h2>
+        <div class="col-12">
+            <form action = "{% url 'listing' listing.id %}" method = "POST">
+                {% csrf_token %}
+                <label for="comment_input">Comment: </label>
+                <textarea type ="text" name = 'comment' class="form-control" id = comment_input></textarea> 
+                <br>
+                <input type = "submit" name="action" class="btn btn-primary" value = "Post"></button>        
+            </form>
+        </div>
+        <br>
+        {% for comment in comments reversed %}
+            <div class="comment col-12">
+                {{comment.comment}}
+                <h6>
+                    Posted By: {{comment.author}}
+                </h6>
+            </div>
+            <hr>
+        {%endfor%}
+    </div>
+</div>
+<br>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2 style="text-align: center;">Create Listing</h2>
+    <br>
+    <div style="width: 50%; position: absolute; left: 25%;">
+        <div class = 'form-group'>
+            <form action = "{% url 'newlisting' %}" method = "POST">
+                {% csrf_token %}
+                <table>
+                    {{form.as_p}}
+                </table>
+                <input type = 'submit' class="btn btn-primary">
+            </form>
+        </div>  
+    </div>  
+{% endblock %}

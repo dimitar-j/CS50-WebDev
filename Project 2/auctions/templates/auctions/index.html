@@ -1,0 +1,26 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+    <div class = "container">
+        {% for listing in listings reversed%}
+            {% if listing.active %}
+                <div class="card col-12">
+                    {%if not listing.image %}
+                        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" width="180px" height="180px">
+                    {%else%}
+                        <img src={{listing.image}} width="180px" height="180px">
+                    {%endif%}
+                    <div style="position: relative; left: 200px; width: 100%;">
+                        <a href = "{% url 'listing' listing.id %}"><h3>{{listing.title}}</h3></a>
+                        <div class = "truncate">
+                            {{listing.description}}
+                        </div>
+                        <h4>Current Price: ${{listing.current_price}}</h4>
+                    </div>
+                </div>
+                <br>
+            {%endif%}
+        {%endfor%}
+    </div>
+{% endblock %}

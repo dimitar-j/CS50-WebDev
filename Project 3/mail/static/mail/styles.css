@@ -1,3 +1,56 @@
 textarea {
     min-height: 400px;
 }
+
+.card {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.overflow {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.users {
+    color:grey;
+    padding-bottom: 20px;
+}
+
+.archive {
+    background-color:white;
+    border: rgb(179, 16, 48) solid 1px;
+    border-radius: 2px;
+    width: 75px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(179, 16, 48);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.unarchive {
+    background-color:white;
+    border: rgb(21, 122, 55) solid 1px;
+    border-radius: 2px;
+    width: 100px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(21, 122, 55);
+    margin-top: 20px;
+}
+
+.reply {
+    background-color:white;
+    border: rgb(16, 106, 179) solid 1px;
+    border-radius: 2px;
+    width: 75px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(16, 106, 179);
+    margin-top: 20px;
+}

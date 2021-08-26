@@ -1,0 +1,57 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+<br>
+<div class="container">
+    <div style="display: inline-block;">
+        <h2>{{profile.username}}</h2>
+        <div>
+            <div style="display: inline-block;">
+                Followers: {{followers}}
+            </div>
+            <div style="display: inline-block;">
+                Following: {{following}}
+            </div>
+        </div>
+        <br>
+        {% if profile != request.user and user.is_authenticated %}
+        <form action = "{% url 'user' profile %}" method = "POST">
+            {% csrf_token %}
+            {% if is_following %}
+            <input type="submit" value = "Unfollow" class = "btn btn-outline-danger" style="margin-bottom: 10px;">
+            {%else%}
+            <input type="submit" value = "Follow" class = "btn btn-outline-primary" style="margin-bottom: 10px;">
+            {%endif%}
+        </form>
+        {% endif %}
+    </div>
+</div>
+<hr>
+<div class="container">
+    <h4>Posts:</h4>
+    {% for post in posts reversed %}
+    <br>
+    <div class= "container">
+        <div class = "card">
+            <h4>
+                <a href="{% url 'user' post.author %}">{{post.author}}</a>
+            </h4>
+            <div>
+                {{post.content}}
+            </div>
+            <br>
+            <div>
+                <img src="\static\network\heart_white.jpg" width="30px" height="30px" style="float: left; margin-right: 5px;">
+                <div style="padding-top: 3px;">
+                    0 Likes
+                </div>
+            </div>
+            <hr>
+            <div class="timestamp">
+               {{post.timestamp}}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

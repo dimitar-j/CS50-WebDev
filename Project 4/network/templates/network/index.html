@@ -1,0 +1,25 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    <br>
+    {% if user.is_authenticated %}
+    <div class= "container">
+        <div class = "card">
+            <h3>New Post</h3>
+            <form action = "{% url 'index' %}" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value = "Post" class = "btn btn-primary post_btn">
+            </form>
+        </div>
+    </div>
+    {% endif %}
+    <br>
+    <div id = "posts">
+    </div>
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-outline-secondary" id="prev" disabled>Previous</button>
+        <button type="button" class="btn btn-outline-primary" id="next">Next</button>
+    </div>
+    <br>
+{% endblock %}

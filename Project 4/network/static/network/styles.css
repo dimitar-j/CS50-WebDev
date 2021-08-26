@@ -1,0 +1,48 @@
+.card {
+    padding: 20px;
+    position: relative;
+}
+
+.post_btn {
+    position: absolute;
+    right: 20px;
+    width: 10%;
+    top: 61px;
+}
+
+.timestamp {
+    color: darkgrey;
+}
+
+@keyframes like {
+    0% {
+        transform: scale(1)
+    }
+
+    75%{
+        transform: scale(1.20)
+    }
+
+    100%{
+        transform: scale(1)
+    }
+}
+
+@keyframes unlike {
+    0% {
+        transform: scale(1)
+    }
+
+    75%{
+        transform: scale(0.8)
+    }
+
+    100%{
+        transform: scale(1)
+    }
+}
+
+#heart {
+    animation-duration: 0.20s;
+    animation-fill-mode: forwards;
+}

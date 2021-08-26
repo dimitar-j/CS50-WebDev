@@ -1,0 +1,29 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    <br>
+    {% for post in posts %}
+    <br>
+    <div class= "container">
+        <div class = "card">
+            <h4>
+                <a href="{% url 'user' post.author %}">{{post.author}}</a>
+            </h4>
+            <div>
+                {{post.content}}
+            </div>
+            <br>
+            <div>
+                <img src="\static\network\heart_white.jpg" width="30px" height="30px" style="float: left; margin-right: 5px;">
+                <div style="padding-top: 3px;">
+                    0 Likes
+                </div>
+            </div>
+            <hr>
+            <div class="timestamp">
+               {{post.timestamp}}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

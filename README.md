@@ -14,7 +14,7 @@ Wikipedia-like online encyclopedia allowing users to explore encyclopedia entrie
 ### Project 2 - Auction Site  
 eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, sort by catergories, comment on listings, and add listings to a “watchlist.” Users are also able to close their own active listings, which will notify the winning user. 
 ![](Project%20Screenshots/2%20-%20Main.png)
-![](Project%20Screenshots/2%20-%20New%20Listing.png)
+![](Project%20Screenshots/2%20-%20Listing.png)
 ![](Project%20Screenshots/2%20-%20New%20Listing.png)
 ### Project 3 - Mail  
 Front-end design for an email client that makes API calls to send and receive emails. Users are able to send emails to other users, and reply to emails, and archive/unarchive received emails.  

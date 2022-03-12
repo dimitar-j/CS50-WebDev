@@ -5,9 +5,11 @@ My code for the Harvard CS50 Web Dev course projects. Written using HTML/CSS, Ja
 ### Project 0 - Google Search  
 Front-end design for Google Search, Google Image Search, and Google Advanced Search. Uses query parameters to redirect users to correct Google search upon from  submission.  
 <img src="Project%20Screenshots/0%20-%20Search.png" width="750">
-![](Project%20Screenshots/0%20-%20Advanced%20Search.png)
+<img src="Project%20Screenshots/0%20-%20Advanced%20Search.png" width="750">
 ### Project 1 - Wiki 
-Wikipedia-like online encyclopedia allowing users to explore encyclopedia entries on different topics represented by Markdown files. Search bar yields all entries matching query while providing suggested entries by checking if query matches substrings of any entry title. Users are able to create a new entry, and edit existing ones.  
+Wikipedia-like online encyclopedia allowing users to explore encyclopedia entries on different topics represented by Markdown files. Search bar yields all entries matching query while providing suggested entries by checking if query matches substrings of any entry title. Users are able to create a new entry, and edit existing ones. 
+<img src="Project%20Screenshots/1%20-%20Main.png" width="750">
+<img src="Project%20Screenshots/1%20-%20New%20Entry.png" width="750">
 ### Project 2 - Auction Site  
 eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, sort by catergories, comment on listings, and add listings to a “watchlist.” Users are also able to close their own active listings, which will notify the winning user.  
 ### Project 3 - Mail  

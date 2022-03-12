@@ -1,5 +1,5 @@
 # About
-My code for the Harvard CS50 Web Dev course projects
+My code for the Harvard CS50 Web Dev course projects. Written using HTML/CSS, JavaScript, and Python (Django).
 
 # Overview
 ### Project 0 - Google Search  

@@ -24,6 +24,6 @@ Front-end design for an email client that makes API calls to send and receive em
 ### Project 4 - Network  
 Twitter-like social network website for making posts and following users. Users are able to view all posts, as well as click on a user's profile to see their posts. Logged in users are also able to create/ posts, comment on and like posts, as well as follow/unfollow other users.
 ![](Project%20Screenshots/4%20-%20Home.png)
-![](Project%20Screenshots/4%20-%20New%20Edit.png)
-![](Project%20Screenshots/4%20-%20New%20Profile.png)
+![](Project%20Screenshots/4%20-%20Edit.png)
+![](Project%20Screenshots/4%20-%20Profile.png)
 

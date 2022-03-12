@@ -5,8 +5,8 @@ My code for the Harvard CS50 Web Dev course projects
 Project 0 - Google Search  
 Project 1 - Wiki  
 Project 2 - Auction Site  
-Project 3 - Mail 
-Project 4 - Newtork
+Project 3 - Mail  
+Project 4 - Network
 
 ## Project Video Demonstrations
 Project 0: https://youtu.be/hQeec_iekT8  

@@ -4,7 +4,7 @@ My code for the Harvard CS50 Web Dev course projects. Written using HTML/CSS, Ja
 # Overview
 ### Project 0 - Google Search  
 Front-end design for Google Search, Google Image Search, and Google Advanced Search. Uses query parameters to redirect users to correct Google search upon from  submission.  
-<img src="Project%20Screenshots/0%20-%20Search.png" width="1000">
+<img src="Project%20Screenshots/0%20-%20Search.png" width="750">
 ![](Project%20Screenshots/0%20-%20Advanced%20Search.png)
 ### Project 1 - Wiki 
 Wikipedia-like online encyclopedia allowing users to explore encyclopedia entries on different topics represented by Markdown files. Search bar yields all entries matching query while providing suggested entries by checking if query matches substrings of any entry title. Users are able to create a new entry, and edit existing ones.  

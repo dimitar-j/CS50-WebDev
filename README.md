@@ -8,10 +8,13 @@ Front-end design for Google Search, Google Image Search, and Google Advanced Sea
 <img src="Project%20Screenshots/0%20-%20Advanced%20Search.png">
 ### Project 1 - Wiki 
 Wikipedia-like online encyclopedia allowing users to explore encyclopedia entries on different topics represented by Markdown files. Search bar yields all entries matching query while providing suggested entries by checking if query matches substrings of any entry title. Users are able to create a new entry, and edit existing ones. 
-<img src="Project%20Screenshots/1%20-%20Main.png" width="750">
-<img src="Project%20Screenshots/1%20-%20New%20Entry.png" width="750">
+<img src="Project%20Screenshots/1%20-%20Main.png">
+<img src="Project%20Screenshots/1%20-%20New%20Entry.png">
 ### Project 2 - Auction Site  
-eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, sort by catergories, comment on listings, and add listings to a “watchlist.” Users are also able to close their own active listings, which will notify the winning user.  
+eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, sort by catergories, comment on listings, and add listings to a “watchlist.” Users are also able to close their own active listings, which will notify the winning user. 
+![](Project%20Screenshots/2%20-%20Main.png)
+![](Project%20Screenshots/2%20-%20New%20Listing.png)
+![](Project%20Screenshots/2%20-%20New%20Listing.png)
 ### Project 3 - Mail  
 Front-end design for an email client that makes API calls to send and receive emails. Users are able to send emails to other users, and reply to emails, and archive/unarchive received emails.  
 ### Project 4 - Network  

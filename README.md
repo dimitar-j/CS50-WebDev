@@ -1,5 +1,5 @@
 # About
-Harvard CS50 Web Dev course projects. Written using HTML/CSS, JavaScript, and Python (Django) for backend.
+Harvard CS50 Web Dev projects. Written using HTML/CSS, JavaScript, and Python (Django) for backend.
 
 # Overview
 ### Project 0 - Google Search  
